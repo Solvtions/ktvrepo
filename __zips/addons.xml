@@ -15,7 +15,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.Kritik" version="3.0" name="[COLOR red]KTV Live[/COLOR]" provider-name="Solvtion Specialist">
+<addon id="plugin.video.Kritik" version="3.1" name="[COLOR red]KTV Live[/COLOR]" provider-name="Solvtion Specialist">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.addon.common" optional="true" />
@@ -26,15 +26,15 @@
     <extension point="xbmc.service" library="service.py" start="startup">
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>IPTV</summary>
-        <description>IPTV - Live TV / PPV / Sports / Kids / Movies / Entertainment at an affordable price for all.</description>
+        <summary>Kritik TV's Premium IPTV Service</summary>
+        <description>Live TV / PPV / Sports / Kids / Movies / Entertainment at an affordable price for all.</description>
         <disclaimer></disclaimer>
         <language>en</language>
         <platform>all</platform>
     </extension>
 </addon>
 
-<addon id="plugin.video.ktvcinema" name="KTV Cinema" version="1.1" provider-name="Kritik TV">
+<addon id="plugin.video.ktvcinema" name="[COLOR red]KTV Cinema[/COLOR]" version="1.2" provider-name="Kritik TV">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
