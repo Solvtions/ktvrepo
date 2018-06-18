@@ -7,7 +7,7 @@ ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = 'KriTiK TV Wizard'
 EXCLUDES       = [ADDON_ID]
 # Text File with build info in it.
-BUILDFILE      = 'http://kritiktv.net/ktv/Texts/autobuilds.txt'
+BUILDFILE      = 'http://kritiktv.net/ktv/Texts/builds.txt'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
