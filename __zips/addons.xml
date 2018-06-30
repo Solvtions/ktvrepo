@@ -61,7 +61,7 @@
     </extension>
 </addon>
 
-    <addon id="repository.ktvrepo" name="Kritik TV Repository" version="1.0.2" provider-name="Solvtion Specialist">
+    <addon id="repository.ktvrepo" name="Kritik TV Repository" version="1.0.3" provider-name="Solvtion Specialist">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -75,6 +75,7 @@
             <datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
         </extension>
         <extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker>
             <summary>Official Repo For Kritik TV</summary>
             <description>Kritik TV Repo</description>
             <platform>all</platform>
