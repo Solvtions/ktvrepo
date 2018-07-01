@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-    <addon id="repository.ktvrepo" name="Kritik TV Repository" version="1.0.3" provider-name="Solvtion Specialist">
+    <addon id="repository.ktvrepo" name="Kritik TV Repository" version="1.0.4" provider-name="Solvtion Specialist">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -8,30 +8,26 @@
 				<info compressed="false">https://raw.githubusercontent.com/Solvtions/ktvrepo/master/__zips/addons.xml</info>
 				<checksum>https://raw.githubusercontent.com/Solvtions/ktvrepo/master/__zips/addons.xml.md5</checksum>
 				<datadir zip="true">https://raw.githubusercontent.com/Solvtions/ktvrepo/master/__zips/</datadir>
-			</dir>
-			<dir>
+			
 		        <info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
                 <checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
                 <datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
-            </dir>
-            <dir>
+            
                 <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
                 <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
                 <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-            </dir>
-            <dir>
+            
                 <info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
                 <checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
                 <datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
-            </dir>
-			<dir>
+            
                 <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
                 <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
                 <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
 			</dir>
         </extension>
         <extension point="xbmc.addon.metadata">
-		<reuselanguageinvoker>false</reuselanguageinvoker>
+			<reuselanguageinvoker>false</reuselanguageinvoker>
             <summary>Official Repo For Kritik TV</summary>
             <description>Kritik TV Repo</description>
             <platform>all</platform>
