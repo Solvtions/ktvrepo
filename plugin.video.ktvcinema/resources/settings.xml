@@ -3,9 +3,9 @@
     <category label="Customization">
         <setting label="32507" type="lsep"/>
         <setting label="30717" type="bool" id="metadata" default="true"/>
-        <setting label="Disable metadata Dialog" type="bool" id="disable_metadata_dialog" default="false"/>
-        <setting label="32508" type="select" values="Trakt|TMDB" id="movie_metadata_provider" default="Trakt"/>
-        <setting label="32509" type="select" values="Trakt|TVDB" id="tv_metadata_provider" default="Trakt"/>
+        <setting label="Disable metadata Dialog" type="bool" id="disable_metadata_dialog" default="true"/>
+        <setting label="32508" type="select" values="Trakt|TMDB" id="movie_metadata_provider" default="TMDB"/>
+        <setting label="32509" type="select" values="Trakt|TVDB" id="tv_metadata_provider" default="TVDB"/>
         <setting label="32510" type="lsep" visible="false"/>
         <setting label="32511" type="select" values="BOTH|SD|HD" id="default_link" default="BOTH" visible="false"/>
         <setting label="32514" type="lsep" visible="false"/>
