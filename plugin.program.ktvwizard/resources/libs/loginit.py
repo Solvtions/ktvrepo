@@ -39,7 +39,7 @@ PLUGIN         = os.path.join(ADDONS,    ADDON_ID)
 PACKAGES       = os.path.join(ADDONS,    'packages')
 ADDONDATA      = os.path.join(USERDATA,  'addon_data', ADDON_ID)
 ADDOND         = os.path.join(USERDATA,  'addon_data')
-LOGINFOLD      = os.path.join(ADDONDATA, 'login')
+LOGINFOLD      = os.path.join(ADDONDATA, 'Login')
 ICON           = os.path.join(PLUGIN,    'icon.png')
 TODAY          = date.today()
 TOMORROW       = TODAY + timedelta(days=1)
@@ -48,7 +48,7 @@ KEEPLOGIN      = wiz.getS('keeplogin')
 LOGINSAVE      = wiz.getS('loginlastsave')
 COLOR1         = uservar.COLOR1
 COLOR2         = uservar.COLOR2
-ORDER          = ['sportsaccess', 'smoothstreams', 'communityportal', 'tvportal', 'flawless', 'sportsmania', 'sportsnationhdtv', 'ultimatemania', 'otttv', 'ivue', 'ontapptv', 'vpnicity', 'overlordtv', 'xtreamcodes']
+ORDER          = ['sportsaccess', 'smoothstreams', 'communityportal', 'tvportal', 'flawless', 'opensubtitles', 'sportsmania', 'sportsnationhdtv', 'ultimatemania', 'otttv', 'ivue', 'ontapptv', 'vpnicity', 'overlordtv', 'xtreamcodes']
 
 LOGINID = { 
 	'sportsaccess': {
@@ -74,6 +74,18 @@ LOGINID = {
 		'settings' : os.path.join(ADDOND, 'script.smoothstreams', 'settings.xml'),
 		'default'  : 'username',
 		'data'     : ['service', 'username', 'user_password'],
+		'activate' : ''},
+	'opensubtitles': {
+		'name'     : 'OpenSubtitles',
+		'plugin'   : 'service.subtitles.opensubtitles',
+		'saved'    : 'loginopensub',
+		'path'     : os.path.join(ADDONS, 'service.subtitles.opensubtitles'),
+		'icon'     : os.path.join(ADDONS, 'service.subtitles.opensubtitles', 'icon.png'),
+		'fanart'   : os.path.join(ADDONS, 'service.subtitles.opensubtitles', 'fanart.jpg'),
+		'file'     : os.path.join(LOGINFOLD, 'opensub_login'),
+		'settings' : os.path.join(ADDOND, 'service.subtitles.opensubtitles', 'settings.xml'),
+		'default'  : 'OSuser',
+		'data'     : ['OSuser', 'OSpass'],
 		'activate' : ''},
 	'communityportal': {
 		'name'     : 'Community Portal',
