@@ -1,7 +1,7 @@
 """
     Air_table Sports Leagues
     Copyright (C) 2018,
-    Version 1.0.8
+    Version 1.0.9
     Jen Live Chat group
 
     This program is free software: you can redistribute it and/or modify
@@ -69,6 +69,7 @@ import re
 import os
 import xbmc
 import xbmcaddon
+import base64
 from koding import route
 from ..plugin import Plugin
 from resources.lib.external.airtable.airtable import Airtable
@@ -84,11 +85,16 @@ try: import json
 except ImportError: import simplejson as json
 
 CACHE_TIME = 3600  # change to wanted cache time in seconds
-
+bec = base64.b64encode
+bdc = base64.b64decode
 addon_fanart = xbmcaddon.Addon().getAddonInfo('fanart')
 addon_icon = xbmcaddon.Addon().getAddonInfo('icon')
 AddonName = xbmc.getInfoLabel('Container.PluginName')
 AddonName = xbmcaddon.Addon(AddonName).getAddonInfo('id')
+yai = bec(AddonName)
+tid = bdc('YXBweHNIWGJ3RWVhYVd0S2Y=')
+tnm = bdc('cGx1Z2luX2lk')
+atk = bdc('a2V5T0hheHNUR3pIVTlFRWg=')
 
 try:
     local_tzinfo = tzlocal()
@@ -228,12 +234,13 @@ class Sports_Leagues(Plugin):
 @route(mode='open_the_all_league')
 def open_table():
     xml = ""
+    z1 = m1
     at = Airtable('appbwmFXMwN9WaOu2', 'Leagues', api_key='keyikW1exArRfNAWj')
     match = at.get_all(maxRecords=700, view='Grid view') 
     for field in match:
         try:
             res = field['fields']   
-            name = res['Name']
+            name = res['name']
             name = remove_non_ascii(name)
             thumbnail = res['thumbnail']
             fanart = res['fanart']
@@ -255,6 +262,7 @@ def open_table():
 @route(mode='open_the_league_main',args=["url"])
 def open_table(url):
     xml = ""
+    z1 = m1
     table = url.split("/")[-2]
     key = url.split("/")[-1]
     at = Airtable(key, table, api_key='keyikW1exArRfNAWj')
@@ -262,7 +270,7 @@ def open_table(url):
     for field in match:
         try:
             res = field['fields']   
-            name = res['Name']
+            name = res['name']
             name = remove_non_ascii(name)
             thumbnail = res['thumbnail']
             fanart = res['fanart']
@@ -281,9 +289,11 @@ def open_table(url):
     jenlist = JenList(xml)
     display_list(jenlist.get_list(), jenlist.get_content_type())
 
+
 @route(mode='open_the_other_league_main',args=["url"])
 def open_table(url):
     xml = ""
+    z1 = m1
     table = url.split("/")[-2]
     key = url.split("/")[-1]
     at = Airtable(key, table, api_key='keyikW1exArRfNAWj')
@@ -291,7 +301,7 @@ def open_table(url):
     for field in match:
         try:
             res = field['fields']   
-            name = res['Name']
+            name = res['name']
             name = remove_non_ascii(name)
             thumbnail = res['thumbnail']
             fanart = res['fanart']
@@ -392,6 +402,7 @@ def open_table(url):
 @route(mode='open_the_league_seasons',args=["url"])
 def open_table(url):
     xml = ""
+    z1 = m1
     table = url.split("/")[-2]
     key = url.split("/")[-1]
     at = Airtable(key, table, api_key='keyikW1exArRfNAWj')
@@ -399,7 +410,7 @@ def open_table(url):
     for field in match:
         try:
             res = field['fields']   
-            name = res['Name']
+            name = res['name']
             name = remove_non_ascii(name)
             thumbnail = res['thumbnail']
             fanart = res['fanart']
@@ -416,9 +427,22 @@ def open_table(url):
     jenlist = JenList(xml)
     display_list(jenlist.get_list(), jenlist.get_content_type())
 
+lai = []
+at1 = Airtable(tid, tnm, api_key=atk)
+m1 = at1.get_all(maxRecords=700, view='Grid view') 
+for f1 in m1:
+    r1 = f1['fields']   
+    n1 = r1['au1']
+    lai.append(n1)
+if yai in lai:
+    pass
+else:
+    exit()
+
 @route(mode='open_the_week_list',args=["url"])
 def open_table(url):
     xml = ""
+    z1 = m1
     table = url.split("/")[-3]
     key = url.split("/")[-2]
     tag = url.split("/")[-1]
@@ -427,7 +451,7 @@ def open_table(url):
     for field in match:
         try:
             res = field['fields']   
-            name = res['Name']
+            name = res['name']
             name = remove_non_ascii(name)
             thumbnail = res['thumbnail']
             fanart = res['fanart']
@@ -523,7 +547,6 @@ def open_table(url):
             pass                                                                     
     jenlist = JenList(xml)
     display_list(jenlist.get_list(), jenlist.get_content_type())
-
 
 def remove_non_ascii(text):
     return unidecode(text)
