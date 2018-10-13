@@ -109,7 +109,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.ktvlive" name="[COLOR red]KTV Live 2.0[/COLOR]" version="2.7" provider-name="Kritik TV">
+<addon id="plugin.video.ktvlive" name="[COLOR red]KTV Live 2.0[/COLOR]" version="2.6" provider-name="Kritik TV">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
