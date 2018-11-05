@@ -128,7 +128,7 @@ CONTACTFANART  = 'http://kritiktv.net/repo2/Wallpaper/System/ktvsystem.jpg'
 ### AUTO UPDATE #########################################
 ########## FOR THOSE WITH NO REPO #######################
 # Enable Auto Update 'Yes' or 'No'
-AUTOUPDATE     = 'No'
+AUTOUPDATE     = 'Yes'
 # Url to wizard version
 WIZARDFILE     = 'http://kritiktv.net/ktv/Texts/builds.txt'
 #########################################################
