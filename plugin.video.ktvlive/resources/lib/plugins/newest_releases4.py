@@ -24,8 +24,8 @@
     Returns the New Releases List-
 
     <dir>
-    <title>Newest Releases2</title>
-    <Airtable>newest_releases2</Airtable>
+    <title>Newest Releases3</title>
+    <Airtable>Releases</Airtable>
     </dir>
 
 
@@ -62,18 +62,18 @@ AddonName = xbmc.getInfoLabel('Container.PluginName')
 AddonName = xbmcaddon.Addon(AddonName).getAddonInfo('id')
 
 
-class NEWEST_RELEASES2(Plugin):
-    name = "newest_releases2"
+class NEWEST_RELEASES3(Plugin):
+    name = "Releases"
 
     def process_item(self, item_xml):
         if "<Airtable>" in item_xml:
             item = JenItem(item_xml)
-            if "newest_releases2" in item.get("Airtable", ""):
+            if "Releases" in item.get("Airtable", ""):
                 result_item = {
                     'label': item["title"],
                     'icon': item.get("thumbnail", addon_icon),
                     'fanart': item.get("fanart", addon_fanart),
-                    'mode': "newest_releasesv2",
+                    'mode': "Releasesv2",
                     'url': item.get("Airtable", ""),
                     'folder': True,
                     'imdb': "0",
@@ -91,12 +91,12 @@ class NEWEST_RELEASES2(Plugin):
                 return result_item                                  
                                
 
-@route(mode='newest_releasesv2', args=["url"])
-def new_releases(url):
+@route(mode='Releasesv2', args=["url"])
+def Releases(url):
     xml = ""
-    at = Airtable('app4O4BNC5yEy9wNa', 'Releases_Newest', api_key='keyOHaxsTGzHU9EEh')
+    at = Airtable('appuNAD2qFkbCe4i8', 'Releases', api_key='keyZmzuBZ1XPQ0M1A')
     match = at.get_all(maxRecords=700, view='Grid view')
-    url2 = "https://api.themoviedb.org/3/list/91781?api_key=ed4b23b00254d1a6bbff12a70f2bc1a1&language=en-US"
+    url2 = "https://api.themoviedb.org/3/list/96428?api_key=20d53bcd9a2ee7d575badbc6f59446c6&language=en-US"
     html2 = requests.get(url2).content
     match2 = json.loads(html2)    
     for field in match:
