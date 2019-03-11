@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.hushamnews12" name="Husham News 12" version="1.0.8" provider-name="Husham.com">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.xbmcswift2" version="2.4.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  <reuselanguageinvoker>false</reuselanguageinvoker>
+    <language />
+    <platform>all</platform>
+    <website>http://www.husham.com/</website>
+    <forum>https://github.com/hmemar/husham.com</forum>
+    <email>website@husham.com</email>
+    <license>Husham Memar News 12 - Donate to Husham Memar Youtube channel https://www.paypal.me/hushammemar</license>
+    
+
+  </extension>
+</addon>
