@@ -55,6 +55,8 @@
     <forum>https://github.com/hmemar/husham.com</forum>
     <email>website@husham.com</email>
     <license>Husham Memar News 12 - Donate to Husham Memar Youtube channel https://www.paypal.me/hushammemar</license>
+
+
   </extension>
 </addon>
 
@@ -239,7 +241,7 @@ For updates check the readme.
     </extension>
 </addon>
 
-    <addon id="repository.ktvrepo" name="Kritik TV Repository" version="1.0.12" provider-name="Solvtion Specialist">
+    <addon id="repository.ktvrepo" name="Kritik TV Repository" version="1.0.13" provider-name="Solvtion Specialist">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
