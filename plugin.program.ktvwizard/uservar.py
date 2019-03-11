@@ -60,7 +60,7 @@ SPACER         = '-'
 COLOR1         = 'red'
 COLOR2         = 'white'
 # Primary menu items   / %s is the menu item and is required
-THEME1         = '[COLOR '+COLOR1+']()[/COLOR] [COLOR '+COLOR2+']%s[/COLOR]'
+THEME1         = '[COLOR '+COLOR1+'][B]([COLOR '+COLOR2+'])[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR]'
 # Build Names          / %s is the menu item and is required
 THEME2         = '[COLOR '+COLOR2+']%s[/COLOR]'
 # Alternate items      / %s is the menu item and is required
@@ -95,11 +95,11 @@ WIZARDFILE     = 'http://kritiktv.net/ktv/Texts/autobuilds.txt'
 # Enable Auto Install 'Yes' or 'No'
 AUTOINSTALL    = 'No'
 # Addon ID for the repository
-REPOID         = ''
+REPOID         = 'repository.ktvrepo'
 # Url to Addons.xml file in your repo folder(this is so we can get the latest version)
-REPOADDONXML   = ''
+REPOADDONXML   = 'https://raw.githubusercontent.com/Solvtions/ktvrepo/master/repository.ktvrepo/addons.xml'
 # Url to folder zip is located in
-REPOZIPURL     = ''
+REPOZIPURL     = 'http://kritiktv.net/ktv/repo'
 #########################################################
 
 #########################################################

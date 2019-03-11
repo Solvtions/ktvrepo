@@ -24,7 +24,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.ktvwizard" name="[COLOR red]Kritik TV Wizard[/COLOR]" version="0.1.23" provider-name="Kritik">
+<addon id="plugin.program.ktvwizard" name="[COLOR red]Kritik TV Wizard[/COLOR]" version="0.1.25" provider-name="Kritik">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -241,7 +241,7 @@ For updates check the readme.
     </extension>
 </addon>
 
-    <addon id="repository.ktvrepo" name="Kritik TV Repository" version="1.0.11" provider-name="Solvtion Specialist">
+    <addon id="repository.ktvrepo" name="Kritik TV Repository" version="1.0.12" provider-name="Solvtion Specialist">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
