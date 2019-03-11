@@ -7,7 +7,7 @@
 		<setting id="buildtheme" type="text" label="Current Theme: " enable="false" default=""/>
 		<setting id="latestversion" type="text" label="Latest Version: " enable="false" default=""/>
 		<setting id="lastbuildcheck" type="text" label="Next check for build update: " enable="false" default=""/>
-		<setting id="disableupdate" type="bool" label="Disable Update Notification" default="false"/>
+		<setting id="disableupdate" type="bool" label="Disable Update Notification" default="true"/>
 		<setting id="installmethod" type="enum" label="Which method would you like to use after Install?" values="Always Ask|Reload Profile|Force Close" enable="!eq(-4,false)"/>
 		<setting type="lsep" label="Show Builds:"/>
 		<setting id="noshow" type="bool" label="Show all Kodi Version Builds" default="false"/>
@@ -42,7 +42,7 @@
 		<setting id="wizlog" type="bool" label="Include Wizard Logs" default="false"/>
 		<setting id="crashlog" type="bool" label="Include Kodi Crash Logs" default="false"/>
 		<setting type="lsep" label="Maintenance Menu: "/>
-		<setting id="showmaint" type="bool" label="Show All Maintenance Sections" default="false"/>
+		<setting id="showmaint" type="bool" label="Show All Maintenance Sections" default="true"/>
 		<setting type="lsep" label="Backup Location: "/>
 		<setting id="path" type="folder" label="Choose Backup Storage Location" default=""/>
 		<setting type="lsep" label="Auto Cleanup On Startup:"/>
