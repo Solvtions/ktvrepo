@@ -5,7 +5,7 @@ import os, xbmc, xbmcaddon
 #########################################################
 ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = '[COLOR red][B]Kritik TV Wizard[/B][/COLOR]'
-EXCLUDES       = [ADDON_ID, 'repository.ktvrepo']
+EXCLUDES       = [ADDON_ID]
 # Text File with build info in it.
 BUILDFILE      = 'http://kritiktv.net/ktv/Texts/autobuilds.txt'
 # How often you would list it to check for build updates in days
@@ -95,11 +95,11 @@ WIZARDFILE     = 'http://kritiktv.net/ktv/Texts/autobuilds.txt'
 # Enable Auto Install 'Yes' or 'No'
 AUTOINSTALL    = 'No'
 # Addon ID for the repository
-REPOID         = ''
+REPOID         = 'repository.ktvrepo'
 # Url to Addons.xml file in your repo folder(this is so we can get the latest version)
-REPOADDONXML   = 'http://'
+REPOADDONXML   = 'https://raw.githubusercontent.com/Solvtions/ktvrepo/master/repository.ktvrepo/addons.xml'
 # Url to folder zip is located in
-REPOZIPURL     = 'http://'
+REPOZIPURL     = 'http://kritiktv.net/ktv/repo'
 #########################################################
 
 #########################################################
